@@ -10,7 +10,88 @@
       href="./assets/favicon-32x32.png"
     />
     <title>Frontend Mentor | Meet landing page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <main>
+      <img src="./assets/logo.svg" alt="meet logo" class="logo" />
+      <div class="hero__img-wrapper">
+        <img
+          src="./assets/tablet/image-hero.png"
+          alt="headshots of users"
+          class="hero__img"
+        />
+      </div>
+      <section class="mainCont__first">
+        <div class="hero__text--cont">
+          <h1>Group Chat for Everyone</h1>
+          <p class="hero__text">
+            Meet makes it easy to connect with others face-to-face virtually and
+            collaborate across any device.
+          </p>
+          <div class="buttonsCont">
+            <button class="hero__button--first button">
+              Download <span class="highlight">v1.3</span>
+            </button>
+            <button class="hero__button--second button">What is it?</button>
+          </div>
+        </div>
+      </section>
+      <section class="mainCont__second">
+        <div class="seperator__cont">
+          <div class="seperator__line"></div>
+          <div class="seperator__number">01</div>
+        </div>
+        <div class="imgGrid__cont">
+          <img
+            src="./assets/desktop/image-woman-in-videocall.jpg"
+            alt="woman in videocall"
+          />
+          <img
+            src="./assets/desktop/image-women-videochatting.jpg"
+            alt="women videochatting"
+          />
+          <img
+            src="./assets/desktop/image-men-in-meeting.jpg"
+            alt="men in meeting"
+          />
+          <img src="./assets/desktop/image-man-texting.jpg" alt="man texting" />
+        </div>
+        <div class="text__cont">
+          <span class="text__intro">BUILT FOR MODERN USE</span>
+          <h2>Smarter meetings, all in one place</h2>
+          <p class="text__long">
+            Send messages, share files, show your screen, and record your
+            meetings — all in one workspace. Control who can join with
+            invite-only team access, data encryption, and data export.
+          </p>
+        </div>
+      </section>
+      <section class="mainCont__third">
+        <div class="seperator__cont">
+          <div class="seperator__line"></div>
+          <div class="seperator__number">02</div>
+        </div>
+        <div class="inner__cont">
+          <div class="overlay"></div>
+          <div class="innerText__cont">
+            <h2>Experience more together</h2>
+            <p class="innerText__long">
+              Experience more together Stay connected with reliable HD meetings
+              and unlimited one-on-one and group video sessions.
+            </p>
+            <button class="inner__button button">
+              Download <span class="highlight">v1.3</span>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
