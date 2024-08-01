@@ -22,23 +22,28 @@ main {
   padding-top: 3.5rem;
 }
 
+.hero__img--left,
+.hero__img--right {
+  display: none;
+}
+
 .mainCont__first {
   padding: 0 2.5rem;
 }
 
 .hero__img-wrapper {
-  width: 100vw; /* Full width of the viewport */
-  overflow: hidden; /* Hide overflow */
+  width: 100vw;
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .hero__img {
-  height: 160px; /* Set the height as needed */
-  width: auto; /* Maintain original width */
-  display: block; /* Remove bottom margin */
-  margin: 64px 0; /* Adjust margins as needed */
+  height: 160px;
+  width: auto;
+  display: block;
+  margin: 64px 0;
 }
 
 .hero__text--cont {
@@ -233,4 +238,141 @@ h2 {
 
 .innerText__cont .highlight {
   color: #d9b8ff;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__img {
+    height: 303px;
+    margin: 72px;
+  }
+  .mainCont__first {
+    padding: 0 115px;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  .buttonsCont {
+    flex-direction: row;
+    margin-bottom: 64px;
+  }
+
+  .mainCont__second {
+    margin-top: 56px;
+    margin-bottom: 64px;
+  }
+
+  .imgGrid__cont {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .imgGrid__cont img {
+    height: 160px;
+  }
+
+  .text__intro {
+    font-size: 1rem;
+  }
+
+  .text__cont {
+    max-width: 504px;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  .mainCont__third {
+    height: 320px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero__img-wrapper {
+    display: none;
+  }
+  .hero__img--left,
+  .hero__img--right {
+    display: block;
+  }
+
+  .mainCont__first {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 127px;
+    padding: 64px 0;
+  }
+
+  .hero__text--cont {
+    width: 448px;
+    height: 314px;
+  }
+
+  h1 {
+    font-size: 4.5rem;
+  }
+
+  .hero__text {
+    font-size: 1.2rem;
+  }
+
+  button {
+    font-size: 1.14rem;
+  }
+
+  .imgGrid__cont img {
+    height: 256px;
+    width: 256px;
+  }
+
+  .text__intro {
+    font-size: 1.14rem;
+  }
+
+  h2 {
+    font-size: 2.8rem;
+  }
+
+  .text__long {
+    font-size: 1.2rem;
+  }
+
+  .inner__cont {
+    width: 100vw;
+    height: 312px;
+    padding: 112px 80px;
+  }
+
+  .innerText__cont {
+    flex-direction: row;
+    gap: 200px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .innerText__cont h2 {
+    width: 334px;
+    text-align: left;
+  }
+
+  .innerText__long {
+    width: 355px;
+    font-size: 1.2rem;
+  }
+
+  button {
+    cursor: pointer;
+    transition: 0.5s all;
+  }
+
+  button:hover {
+    background-color: #b18bdd;
+  }
+
+  .hero__button--first:hover {
+    background-color: #71c0d4;
+  }
 }
